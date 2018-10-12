@@ -353,19 +353,18 @@
         }
     }
     if (count >= value) {
-        NSArray *mines = [myGame getMines];
         realIndex = temp;
         for (int i = 0; i < iteration; i++) {
              if (realIndex >= 0 && realIndex < myGame.getBoardSize[0] * myGame.getBoardSize[1]) {
                  value = [myGame getValueAtIndex:realIndex];
                  if (value > 0 && ![marked containsObject:[NSNumber numberWithInt:realIndex]]) {
                      [mineButtons[realIndex] clicked:value titleColor:colors[value]];
-                 }else if (value == 0) {
+                 }else if (value == 0 && ![marked containsObject:[NSNumber numberWithInt:realIndex]]) {
                      expendedIndex = [NSMutableArray array];
                      [mineButtons[realIndex] clicked:value titleColor:colors[value]];
                      [self shortcut:realIndex];
-                 }else {
-                     if (![mines containsObject:[NSNumber numberWithInt:realIndex]]) {
+                 }else if (value < 0){
+                     if (![marked containsObject:[NSNumber numberWithInt:realIndex]]) {
                          [self clickOnMine:realIndex];
                          return;
                      }

@@ -10,7 +10,7 @@
 #import "constants.h"
 
 
-#define DEBUGPRINT 0
+#define DEBUGPRINT 1
 @interface board(){
     int boardWidth;
     int boardHeight;
