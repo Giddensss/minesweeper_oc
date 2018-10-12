@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RecordAddView : NSViewController
-
+- (void) setupRecordInformation:(int) record difficulty:(int) difficulty;
 @end
 
 NS_ASSUME_NONNULL_END

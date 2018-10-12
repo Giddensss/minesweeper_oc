@@ -11,7 +11,9 @@
 
 @protocol GameListener <NSObject>
 
-<#methods#>
+- (void) onGameOver;
+
+- (void) onGameWin;
 
 @end
 

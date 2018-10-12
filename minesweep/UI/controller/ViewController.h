@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "game.h"
+#import "../listener/MineButtonClickedListener.h"
+#import "../listener/GameListener.h"
+@interface ViewController : NSViewController<MineButtonClickedListener,GameListener>
 
-@interface ViewController : NSViewController
+- (void) changeDifficulty:(int) difficulty;
 
-
+- (void) setGame:(game *) g;
 @end
 

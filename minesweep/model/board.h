@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface board : NSObject
-
+- (id) initWithDifficulty:(int) difficulty;
+- (int) getMineAount;
+- (int *) getBoardSize;
+- (int) getValueAtIndex:(int) index;
+- (NSArray *) getMines;
 @end

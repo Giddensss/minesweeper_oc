@@ -10,7 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RecordViewController : NSViewController
+@interface RecordViewController : NSViewController <NSTableViewDelegate,NSTableViewDataSource>
+- (void) setDifficulty:(int) difficulty;
 
 @end
 

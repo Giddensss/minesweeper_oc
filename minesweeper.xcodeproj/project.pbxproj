@@ -32,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E70B4BEC2094082100788F3D /* minesweep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minesweep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70B4BEC2094082100788F3D /* minesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70B4BEF2094082100788F3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E70B4BF02094082100788F3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E70B4BF22094082100788F3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		E70B4BED2094082100788F3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E70B4BEC2094082100788F3D /* minesweep.app */,
+				E70B4BEC2094082100788F3D /* minesweeper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,9 +229,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E70B4BEB2094082100788F3D /* minesweep */ = {
+		E70B4BEB2094082100788F3D /* minesweeper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E70B4C002094082500788F3D /* Build configuration list for PBXNativeTarget "minesweep" */;
+			buildConfigurationList = E70B4C002094082500788F3D /* Build configuration list for PBXNativeTarget "minesweeper" */;
 			buildPhases = (
 				E70B4BE82094082100788F3D /* Sources */,
 				E70B4BE92094082100788F3D /* Frameworks */,
@@ -241,9 +241,9 @@
 			);
 			dependencies = (
 			);
-			name = minesweep;
+			name = minesweeper;
 			productName = minesweep;
-			productReference = E70B4BEC2094082100788F3D /* minesweep.app */;
+			productReference = E70B4BEC2094082100788F3D /* minesweeper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E70B4BE72094082100788F3D /* Build configuration list for PBXProject "minesweep" */;
+			buildConfigurationList = E70B4BE72094082100788F3D /* Build configuration list for PBXProject "minesweeper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -278,7 +278,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E70B4BEB2094082100788F3D /* minesweep */,
+				E70B4BEB2094082100788F3D /* minesweeper */,
 			);
 		};
 /* End PBXProject section */
@@ -486,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E70B4BE72094082100788F3D /* Build configuration list for PBXProject "minesweep" */ = {
+		E70B4BE72094082100788F3D /* Build configuration list for PBXProject "minesweeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E70B4BFE2094082500788F3D /* Debug */,
@@ -495,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E70B4C002094082500788F3D /* Build configuration list for PBXNativeTarget "minesweep" */ = {
+		E70B4C002094082500788F3D /* Build configuration list for PBXNativeTarget "minesweeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E70B4C012094082500788F3D /* Debug */,

@@ -11,7 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DBManager : NSObject
+- (void) initTables;
 
+- (void) updateBestRecords:(int) record level:(int) l owner:(NSString *) name timeStamp:(NSString *)t;
+
+- (int) getBestRecordForDifficulty:(int) level;
+
+- (NSDictionary *) getRecordsForDifficulty:(int) level;
 @end
 
 NS_ASSUME_NONNULL_END
