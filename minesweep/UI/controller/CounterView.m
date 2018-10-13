@@ -71,10 +71,11 @@
 }
 
 - (void) updateCounter:(int) counter {
+    if (counter > 999) return;
     int d = counter % 10;
-    int t = counter / 10;
+    int t = (counter / 10) % 10;
     int h = counter / 100;
-    //NSLog(@"%d %d %d",h,t,d);
+    NSLog(@"%d %d %d",h,t,d);
     
     if (isFinishLoading ) {
         if (d >= 0 && t >= 0 && h >= 0) {
