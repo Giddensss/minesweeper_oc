@@ -30,6 +30,7 @@
     BOOL shouldLockBtn;
     NSTimer *clock;
     int time;
+    BOOL isInited;
 }
 @end
 @implementation ViewController
@@ -48,7 +49,7 @@
         infoPanelBGImages = @[@"info_panel_beginner",@"info_panel_intermedia",@"info_panel_hard"];
         shouldLockBtn = NO;
         time = 0;
-        
+        isInited = NO;
         /*if (frameWidth == 0){
             frameWidth = beginnerWindowWidth;
             frameHeight = beginnerWindowHeight;
@@ -69,7 +70,11 @@
 }
 
 - (void) viewDidAppear{
-    [self changeDifficulty:[myGame getDifficulty]];
+    if (!isInited) {
+        [self changeDifficulty:[myGame getDifficulty]];
+        isInited = YES;
+        
+    }
 }
 
 - (void) changeDifficulty:(int)difficulty{

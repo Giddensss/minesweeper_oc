@@ -19,3 +19,4 @@ NSString *show_best_record_for_level = @"SELECT best_record FROM Difficulty WHER
 NSString *show_records_for_level = @"SELECT name, value, time FROM Records WHERE difficulty= ";
 NSString *order_by_value = @" ORDER BY value";
 #endif /* queries_h */
+
